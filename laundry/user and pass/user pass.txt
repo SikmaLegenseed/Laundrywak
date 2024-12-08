@@ -1,0 +1,11 @@
+user = admin
+pass = admin
+
+user = ari (admin)
+pass = wira
+
+user = kasir
+pass = kasir
+
+user = owner
+pass = owner

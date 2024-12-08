@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #D5F0C1 !important;
+    background-size: cover;
+    background-position: center;
+    isolation: isolate;
+    position: relative;
+}
+
+div:has(> table) {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    background-color: white !important;
+    padding-block: 2rem;
+    padding-inline: 2rem !important;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem 0 rgb(0 0 0 / .1);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: start;
+}
+
+table {
+    margin: 0;
+}
+
+table :is(.tr, td, th, thead, tbody) {
+    background-color: transparent !important;
+}
+
+/* body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100dvh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(../../galaxy.jpg);
+    pointer-events: none;
+    opacity: 0.25;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+} */
+
+.header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* padding: 20px 100px; */
+    box-shadow: .25rem 0 .5rem 0 rgb(0 0 0 / .1);
+    background-color: white;
+    padding: 1rem 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    /* margin-left: 40px; */
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%; 
+    /* ^ kalo topnya 0 ada garis putih */
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: .3s;
+}
+
+.navbar > a:hover::before{
+    width: 100%;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+    /* Background color for the entire page */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#all {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    color: black;
+    /* Blue as the primary color */
+}
+
+#form {
+    font-family: "Inter", sans-serif;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    /* White background */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.5);
+    /* Neumorphism shadow */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    color: #4CAF50;
+    /* Blue as the label color */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[list="nama_member"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    /* Light gray background for input fields */
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    /* Blue as the submit button background color */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #4CAF50;
+    /* Darker blue on hover */
+}
+
+.nav-group {
+    position: relative;
+}
+
+.nav-group .drop-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 0 .5rem 0 rgb(0 0 0 / .1);
+    /* display: flex; */
+    flex-direction: column;
+    gap: .5rem;
+    padding-block: .5rem;
+    transition: .2s ease;
+}
+
+.nav-group:hover .drop-nav {
+    display: flex;
+}
+
+.nav-group .drop-nav > * {
+    margin: 0;
+    padding: .5rem 1rem;
+}
+
+.nav-group .fa-angle-down {
+    font-size: .75rem;
+}
+
+.nav-group .drop-nav > *:hover {
+    background-color: #eee;
+    /* color: #; */
+}
+
+.report-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* perlu */
+.report-table th,
+.report-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.report-table th {
+    background-color: #f2f2f2;
+}
+
+/* .paket{
+width: 150px;
+} */
+
+/* perlu */
+.report-table select {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 150px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media print{
+    .tidak_print{
+        display: none !important;
+    }
+}
